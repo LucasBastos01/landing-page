@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO PARA VOLTAR AO TOPO DA TELA -->
+    <div id="top">
+        <img width="50" height="50" src="../src/assets/seta.png" alt="send-letter--v1" title="Voltar ao topo">
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../src/assets/logo.png" alt="Logo" width="150" height="50"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bebidas">Bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comidas">Comidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reserva">Faça a sua reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#localizacao">Localização</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TELA PARA QUANDO FOR DE UM DISPOSITIVO MOBILE -->
+    <div style="position: relative;" class="d-block d-sm-none">
+        <img width="100%" src="../src/assets/fundoTelaCelular.jpg" alt="">
+        <div id="fundoCelular">
+            <h3>Bem vindo ao Café & Conforto</h3>
+        </div>
+    </div>
+
+    <!-- IMAGEM PASSANDO NO FORMATO CAROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 custom-height" src="../src/assets/slide-foto3.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Descubra o sabor do aconchego em cada xícara. Bem-vindo à sua pausa perfeita no Café & Conforto!
+                    </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 custom-height" src="../src/assets/slide-foto1.jpg" class="d-block w-100"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Um refúgio acolhedor para desfrutar de um bom café com a família e amigos, onde cada momento se
+                        torna especial.</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 custom-height" src="../src/assets/slide-foto2.jpg" class="d-block w-100"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Um lugar tranquilo para trabalhar, onde a produtividade encontra a serenidade.</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- MENU BEBIDAS COM CAFÉ-->
+    <div class="container-fluid" style="background-color: rgb(222, 129, 22); padding: 50px 0; min-height: 60vh;"
+        id="bebidas">
+        <div class="row p-3 p-md-5" data-aos="fade-right">
+            <div class="col-md-6 mt-3">
+                <h3 class="titulo">Bebidas com café</h3>
+                <div class="texto">
+                    No Café & Conforto, oferecemos uma seleção de cafés que atendem a todos os paladares. Desfrute do
+                    sabor clássico do café coado, a intensidade do expresso, a suavidade do latte, ou a perfeição do
+                    cappuccino. Para um toque de indulgência, experimente o moca (ou mocha) com seu sabor de café e
+                    chocolate.
+
+                    Nos dias quentes, refresque-se com um frapuccino, ou experimente nosso cold brew, um café gelado
+                    preparado por infusão. Cada xícara é uma jornada de sabor e conforto, convidando-o a explorar o
+                    mundo do café conosco.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="../src/assets/bebidasComCafe.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU BEBIDAS SEM CAFÉ-->
+    <div class="container-fluid" style="background-color: rgb(31, 31, 31); padding: 5% 0; min-height: 60vh;">
+        <div class="row texto" style="padding: 2% 5%;" data-aos="fade-left">
+            <div class="col-12 col-md-6 order-md-1">
+                <img class="w-100" src="../src/assets/bebidasSemCafe.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-6 order-md-2">
+                <h3 class="titulo">Bebidas sem café</h3>
+                <div>
+                    No Café & Conforto, oferecemos uma rica variedade de bebidas para agradar a todos os paladares. Além
+                    das nossas opções de café, como expresso, latte e cappuccino, também servimos chás quentes e gelados
+                    com uma ampla gama de sabores, chai, chocolate quente e gelado, refrigerantes (diet e zero), sucos
+                    (frescos ou industrializados), vitaminas, kombuchas e smoothies. Cada bebida é uma experiência
+                    única, convidando você a explorar um mundo de sabores e conforto.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU COMIDAS SALGADA-->
+    <div class="container-fluid" style="background-color: rgb(222, 129, 22); padding: 50px 0; min-height: 60vh;"
+        id="comidas">
+        <div class="row p-3 p-md-5" data-aos="fade-right">
+            <div class="col-md-6">
+                <h3 class="titulo">Comidas: opções salgadas</h3>
+                <div class="texto">
+                    Em nosso cardápio de delícias salgadas, oferecemos uma ampla variedade de opções para saciar seu
+                    paladar. Experimente nosso irresistível pão de queijo ou o clássico pão na chapa para começar o dia
+                    com energia. Para um lanche rápido ou petisco, temos empadas e quiches recheadas com sabores
+                    incríveis. Se preferir salgados, temos uma seleção de coxinhas, quibes e pastéis fritos, bem como
+                    opções assadas, como pastel de forno, tortas e esfihas. Cada mordida é uma explosão de sabor que vai
+                    encantar seu paladar.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="../src/assets/comidaOpcoesSalgada.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU COMIDAS DOCES-->
+    <div class="container-fluid" style="background-color: rgb(31, 31, 31); padding: 5% 0; min-height: 60vh;">
+        <div class="row texto" style="padding: 2% 5%;" data-aos="fade-left">
+            <div class="col-12 col-md-6 mt-2">
+                <img class="w-100" src="../src/assets/comidaOpcoesDoces.webp" alt="">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="titulo">Comidas: opções doces</h3>
+                <div>
+                    Desfrute de uma variedade de sobremesas tentadoras, como cheesecake, tortas (chocolate, limão,
+                    morango, nozes com opções variáveis), cookies e brownies deliciosos. Experimente a panqueca
+                    americana e os docinhos, incluindo beijinho e brigadeiro, disponíveis em versão para colher. Não
+                    perca nosso bolo de pote, uma doçura portátil que vai satisfazer seus desejos doces. Cada sobremesa
+                    é uma explosão de sabor.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="container-fluid" style="background-color: rgb(222, 129, 22); padding: 50px 0; min-height: 60vh;"
+        id="sobre">
+        <div class="row p-3 p-md-5" data-aos="fade-up">
+            <div class="col-md-6">
+                <h3 class="titulo">Café & Conforto</h3>
+                <div class="texto">
+                    Em cada xícara do Café & Conforto, você encontrará a essência de uma jornada de 10 anos de paixão e
+                    dedicação à arte do café. Fundado por José e sua equipe dedicada, o Café & Conforto é muito mais do
+                    que uma cafeteria. Localizado em uma encantadora casa de campo, o Café & Conforto oferece uma
+                    experiência única, com grãos de café escolhidos a dedo e torrados com precisão. O ambiente combina
+                    música suave e iluminação aconchegante. Desde o café coado até os pratos quentes e sobremesas, cada
+                    detalhe é cuidadosamente preparado. Sob a liderança de José, o Café & Conforto se tornou um ponto de
+                    encontro especial, onde a paixão pelo café se mistura com a busca por momentos tranquilos e
+                    agradáveis. Venha se juntar a nós e descubra por que somos uma referência no mundo do café e do
+                    conforto.
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <img class="img-fluid" src="../src/assets/sobreNos.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- FAÇA A SUA RESERVA -->
+    <div class="container-fluid" style="background-color: rgb(31, 31, 31);" id="reserva">
+        <div class="row texto" style="padding: 2% 3%;">
+            <h3 class="titulo text-center" data-aos="fade-up">Faça a sua reserva conosco</h3>
+            <div class="col-md-6 mt-2 forms" data-aos="fade-left">
+                <h4 class="titulo">Pelo site</h4>
+                <br>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nomeCliente">Nome</label>
+                            <input type="text" name="nomeCliente" id="nomeCliente" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefoneCliente">Telefone</label>
+                            <input type="text" name="telefoneCliente" id="telefoneCliente" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="dataReserva">Data da reserva</label>
+                            <input type="date" name="dataReserva" id="dataReserva" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="horaReserva">Horário</label>
+                            <input type="time" name="horaReserva" id="horaReserva" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="numeroPessoas">Número de pessoas</label>
+                            <input type="number" name="numeroPessoas" id="numeroPessoas" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="numeroPessoas">Localidade</label>
+                            <br>
+                            <select name="localidade" id="localidade" class="form-control">
+                                <option value="" selected disabled>Selecione uma cidade</option>
+                                <option value="vassouras">Vassouras</option>
+                                <option value="vassouras">Valença</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="cta" type="reset">
+                        <span>Enviar</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-6 mt-2" data-aos="fade-right">
+                <div class="forms">
+                    <h4 class="titulo">Entre em contato</h4>
+                    <div style="margin-top: 70px;">
+                        <p>Telefone: (24) 99874-5264</p>
+                        <br><br>
+                        <p>Instragram: <a href="https://www.instagram.com">@CafeConfortoOficial</a></p>
+                        <br><br>
+                        <p>Facebook: <a href="https://www.facebook.com/?locale=pt_BR">CafeConfortoOficial</a></p>
+                    </div>
+                    <br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOCALIZAÇÃO -->
+        <div class="col-12 mt-3" id="localizacao">
+            <div class="forms" style="margin: 3%; height: auto; position: relative;" data-aos="fade-up">
+                <h4 class="titulo text-center">Localização das nossas cafeterias</h4>
+                <div class="row">
+                    <div class="map-container col-md-6 col-sm-12" onmouseover="mostrarCidade(this, 'Vassouras')"
+                        onmouseout="ocultarCidade(this)">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d481697123.3306077!2d-43.226547891888906!3d-22.911253649780598!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5bfcef45a7%3A0x3c044ac8f75ca717!2sMaracan%C3%A3%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1694105727958!5m2!1spt-BR!2sbr"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="map-container col-md-6 col-sm-12" onmouseover="mostrarCidade(this, 'Valença')"
+                        onmouseout="ocultarCidade(this)">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d481697123.3306077!2d-43.226547891888906!3d-22.911253649780598!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5bfcef45a7%3A0x3c044ac8f75ca717!2sMaracan%C3%A3%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1694105727958!5m2!1spt-BR!2sbr"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- FOOTER O FINAL DA PÁGINA -->
+    <footer id="footer">
+        <div class="row align-items-center text-center">
+            <div class="col-4  mt-4">
+                FOOTER
+            </div>
+            <div class="col-4  mt-4">
+                FOOTER
+            </div>
+            <div class="col-4  mt-4">
+                FOOTER
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<!-- SCRIPT PARA FAZER A ANIMAÇÃO DE MOSTRAR A CIDADE  -->
+<script>
+    function mostrarCidade(element, text) {
+        const overlay = element.querySelector('.overlay');
+        overlay.style.height = "50%";
+        overlay.textContent = text;
+    }
+
+    function ocultarCidade(element) {
+        const overlay = element.querySelector('.overlay');
+        overlay.style.height = "0";
+        overlay.textContent = '';
+    }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- SCRIPT PARA VOLTAR AO TOPO DA PÁGINA -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const topButton = document.getElementById("top");
+        topButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+</script>
+
+</html>

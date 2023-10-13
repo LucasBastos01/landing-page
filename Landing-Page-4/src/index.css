@@ -1,0 +1,318 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* COMEÇO TELA FUNDO INICIAL */
+
+.fundo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.imagemFundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 23%;
+}
+
+.mensagem {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    padding: 20px;
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    max-width: 570px;
+}
+
+.informacoes {
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(4, 254, 0);
+}
+
+#typing-text {
+    display: inline-block;
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+
+/* FIM TELA FUNDO INICIAL */
+
+/* COMEÇO CLASS  GERAL DE TITULO E TEXTOS */
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 47px;
+    font-weight: 800;
+    margin-bottom: 20px !important;
+}
+
+.texto {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* FIM CLASS  GERAL DE TITULO E TEXTOS */
+
+/* COMEÇO BIBIOGRAFIA E ÁLBUM */
+
+.Bibiografia {
+    background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.albuns {
+    background-color: #bcede3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* FIM BIBIOGRAFIA E ÁLBUM */
+
+/* COMEÇO DE ÁLBUNS E ANIMAÇÃO DO CLIPE DAS MÚSICAS */
+
+.video-container {
+    animation: floatAnimation 2s infinite ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, -0.8);
+}
+
+.video-container:hover{
+    animation: none;
+}
+
+.cards {
+    background-color: #8c3df9;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 800;
+    transition: transform 0.6s ease-in-out;
+}
+
+.cards:hover{
+    transform: scale(1.2)
+}
+
+.cards2 {
+    background-image: radial-gradient(circle at 50% -20.71%, #7b00ff 0%, #ff00f7 25%, #00ffcc 50%, #aaff00 75%, #ffd700 100%); 
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    border-radius: 7px;
+    padding: 10%;
+}
+
+@keyframes floatAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* FIM DE ÁLBUNS E ANIMAÇÃO DO CLIPE DAS MÚSICAS */
+
+/* COMEÇO ANIMAÇÃO DO BOTÃO DE ENVIAR FORMULARIO */
+
+.forms {
+    border: 1px solid #FFFFFF;
+    padding: 3%;
+    border-radius: 7px;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: gray;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.cta svg {
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: black;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: white;
+    color: rgb(222, 129, 22);
+    ;
+}
+
+.cta:hover svg,
+.cta:hover span {
+    transform: translateX(0);
+    stroke: rgb(222, 129, 22);
+    color: rgb(222, 129, 22);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* FIM ANIMAÇÃO DO BOTÃO DE ENVIAR FORMULARIO */
+
+
+/* COMEÇO ANIMAÇÃO DOS CARDS DAS REDES SOCIAIS */
+
+.card {
+    display: flex;
+    height: 50px;
+    width: 62px;
+    background-color: transparent !important;
+}
+
+.card svg {
+    position: absolute;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.card .social-link2:hover {
+    background-color: #2753a7;
+}
+
+.card .social-link3:hover {
+    background-color: #55acee;
+}
+
+/* FIM ANIMAÇÃO DOS CARDS DAS REDES SOCIAIS */
+
+
+/* CONFIGURAÇÕES ESPECIFICAS PARA QUANDO A TELA FOR MENOR DO QUE 1000PX */
+
+@media (max-width: 1000px) {
+    .imagemFundo {
+        display: none;
+    }
+
+    .fundo {
+        background-color: rgb(131, 101, 250);
+    }
+
+    .mensagem {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        font-size: 50px;
+    }
+
+    .informacoes {
+        font-size: 30px;
+    }
+    .titulo{
+        font-size: 30px
+    }
+    .video-container{
+        animation: none;
+    }
+}

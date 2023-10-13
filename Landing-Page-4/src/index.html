@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Castela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- IAMGEM QUE FICA DE FUNDO / MUDA QUANDO FOR UMA TELA MENOR DO QUE 1000PX -->
+    <div class="fundo">
+        <img class="imagemFundo" src="../assests/fundoAnaCastela.png" alt="">
+        <div class="mensagem">
+            <p>Ana Castela</p>
+            <div class="informacoes" id="info-text">
+                <span id="typing-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIBIOGRAFIA -->
+    <div class="container-fluid Bibiografia">
+        <div class="row p-3 p-md-5">
+            <div class="col-md-6 mt-5">
+                <h3 class="titulo">Bibiografia</h3>
+                <div class="texto">
+                    Ana Castela é uma cantora e compositora brasileira, nascida em 16 de novembro de 2003. Ela se
+                    destacou no cenário musical com sua voz única e versatilidade artística, trazendo uma fusão de
+                    estilos que incluem pop, MPB (Música Popular Brasileira), e elementos eletrônicos.
+
+                    Desde o início de sua carreira, Ana Castela conquistou uma base de fãs fiel, graças às suas letras
+                    profundas e cativantes, que muitas vezes abordam temas como amor, relacionamentos e
+                    autodescobrimento. Sua habilidade de transmitir emoções através da música a torna uma artista
+                    querida por muitos.
+
+                    Ao longo de sua trajetória, Ana Castela acumulou sucessos e colaborações marcantes, alcançando
+                    posições destacadas nas paradas musicais e conquistando inúmeros prêmios e reconhecimentos. Seu
+                    talento artístico e dedicação à música continuam a inspirar e encantar fãs ao redor do mundo.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="../assests/imagemBiografia.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ÁLBUNS MOSTRANDO O VIDEO DAS TRÊS MÚSICAS -->
+    <div class="container-fluid albuns">
+        <br>
+        <h3 class="titulo text-center" style="color: #000;">Músicas</h3>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-sm d-flex flex-column align-items-center">
+                    <video width="300" height="300" controls class="video-container">
+                        <source src="../assests/video/Solteiro_Forcado.mp4" type="video/mp4">
+                    </video>
+                    <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                        data-bs-target="#musica1">
+                        Ver letra da Música Solteira Forçado
+                    </button>
+                </div>
+                <div class="col-sm d-flex flex-column align-items-center">
+                    <video width="300" height="300" controls class="video-container">
+                        <source src="../assests/video/Nosso_Quadro.mp4" type="video/mp4">
+                    </video>
+                    <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                        data-bs-target="#musica2">
+                        Ver letra da Música Nosso Quadro
+                    </button>
+                </div>
+                <div class="col-sm d-flex flex-column align-items-center">
+                    <video width="300" height="300" controls class="video-container">
+                        <source src="../assests/video/Boiadeira_Remix.mp4" type="video/mp4">
+                    </video>
+                    <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                        data-bs-target="#musica3">
+                        Ver letra da Música Boiadeira Remix
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LSITA TURNÊ -->
+    <div class="container-fluid turne">
+        <div class="container mt-3">
+            <h3 class="titulo text-center" style="color: #000;">Datas da Turnê</h3>
+            <div class="container ">
+                <div class="row g-4 d-flex align-items-center justify-content-center">
+                    <div class="col-md-5">
+                        <div class="p-3 cards">
+                            <div class="cards2">
+                                Data: 15 de Outubro de 2023<br>
+                                Local: Teatro Municipal<br>
+                                Cidade: São Paulo<br>
+                                Estado: São Paulo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-3 cards">
+                            <div class="cards2">
+                                Data: 20 de Outubro de 2023<br>
+                                Local: Arena Music<br>
+                                Cidade: Rio de Janeiro<br>
+                                Estado: Rio de Janeiro
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-3 cards">
+                            <div class="cards2">
+                                Data: 20 de Outubro de 2023<br>
+                                Local: Arena Music<br>
+                                Cidade: Rio de Janeiro<br>
+                                Estado: Rio de Janeiro
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-3 cards">
+                            <div class="cards2">
+                                <strong>Data:</strong> 1 de Novembro de 2023<br>
+                                <strong>Local:</strong> Palácio das Artes<br>
+                                <strong>Cidade:</strong> Belo Horizonte<br>
+                                <strong>Estado:</strong> Minas Gerais
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <div class="container-fluid" style="background-color: #004bff;">
+        <div class="container">
+            <br>
+            <h3 class="titulo text-center">Entre em contato</h3>
+            <div class="row">
+                <div class="col-8 mx-auto forms">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="nomeCliente">Nome</label>
+                                <input type="text" name="nomeCliente" id="nomeCliente" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefoneCliente">Telefone</label>
+                                <input type="text" name="telefoneCliente" id="telefoneCliente" class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="dataShow">Data do Show</label>
+                                <input type="date" name="dataShow" id="dataShow" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="horaShow">Horário</label>
+                                <input type="time" name="horaShow" id="horaShow" class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <button class="cta" type="reset">
+                            <span>Enviar</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- PARTE DO FOOTER -->
+    <footer style="background-color: #000;">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <span class="titulo">Redes Sociais</span>
+            <div class="d-flex">
+                <div class="card">
+                    <a class="social-link1" href="https://www.instagram.com/anacastelacantora/?hl=pt">
+                        <img width="30" height="30" src="/assests/instagram.png" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="social-link2" href="https://www.facebook.com/anacastelaoficial/">
+                        <img width="30" height="30" src="/assests/facebook.png" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="social-link3" href="https://twitter.com/anacastelabr">
+                        <img width="30" height="30" src="/assests/twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+
+    <!-- MODAL MÚSICA 1 -->
+    <div class="modal fade" id="musica1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Letra da Música Solterio Forçado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                Tá difícil não te ver aqui
+                Quando eu acordo
+                Não dá nem vontade de sair
+                Da cama
+
+                Eu passaria o dia inteiro de pijama
+                Mas, no outro lado da saudade, a vida anda
+
+                Saio, mas eu não fico legal
+                Minha bateria social acaba na primeira hora
+                Tudo que eu faço pra esquecer
+                No final, lembra você
+                E agora?
+
+                Eu tô sendo solteiro forçado, uh
+                Eu tô beijando sem querer ser beijado, uh
+                Era pra ser você comigo aqui do lado
+                Eu tô na bagaceira, mas tô só o bagaço
+
+                Eu tô sendo solteiro forçado, uh
+                Eu tô beijando sem querer ser beijado, uh
+                Era pra ser você comigo aqui do lado
+                Eu tô na bagaceira, mas tô só o bagaço
+
+                Saio, mas eu não fico legal
+                Minha bateria social acaba na primeira hora
+                Tudo que eu faço pra esquecer
+                No final, lembra você
+                E agora?
+
+                Eu tô sendo solteiro forçado, uh
+                Eu tô beijando sem querer ser beijado, uh
+                Era pra ser você comigo aqui do lado
+                Eu tô na bagaceira, mas tô só o bagaço
+
+                Eu tô sendo solteiro forçado, uh
+                Eu tô beijando sem querer ser beijado, uh
+                Era pra ser você comigo aqui do lado
+                Eu tô na bagaceira, mas tô só o bagaço
+
+                Era pra ser você comigo aqui do lado
+                Eu tô na bagaceira, mas tô só o bagaço
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL MÚSICA 2 -->
+    <div class="modal fade" id="musica2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Letra da Música Nosso Quadro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                Todo mundo tem um amor que quando deita e olha pro teto
+                Vem a pergunta: Será que se fosse hoje a gente dava certo?
+                Um episódio que nunca vai ser lançado, um álbum incompleto
+                Uma história que parou pela metade, cê imagina o resto
+
+                É saudade que toma, que toma
+                Que toma conta de mim
+                E não me dá remorso, nem raiva
+                Nem ódio, dá pena do fim
+
+                Agora o nosso quadro casando na igreja
+                Não vai ser pendurado, só existe na minha cabeça
+                Nós dois tocando o gado, a filha boiadeira
+                Nossa vida no mato só existe na minha cabeça
+                Vai ser amor mesmo não sendo a vida inteira
+                Vai ser amor mesmo não sendo a vida inteira
+
+                Tem coisas que nem querendo a gente esquece
+                Final do ano de 2017
+                Eu começando Odonto e você na Vet
+                A sua camisa jeans na minha caminhonete
+
+                Os meus amigos perguntam que fim cê levou
+                O meu pai não desiste, ainda quer ser vovô
+                O tempo não foi tão legal com nós dois
+                Podia ter sido, mas não foi
+
+                Agora o nosso quadro casando na igreja
+                Não vai ser pendurado, só existe na minha cabeça
+                Nós dois tocando o gado, a filha boiadeira
+                Nossa vida no mato só existe na minha cabeça
+                Vai ser amor mesmo não sendo a vida inteira
+                Vai ser amor mesmo não sendo a vida inteira
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL MÚSICA 3 -->
+    <div class="modal fade" id="musica3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Letra da Música Solterio Forçado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <pre>
+                Depois que me conheceu
+                Já quis se mudar aqui pro interior
+                Deixa o carro na garagem
+                Pra andar de Manga-larga Marchador
+
+                O cabelo Chanel deu lugar pro chapéu
+                Tá cheia de terra a unha de gel
+                O Dolce & Gabbana agora foi trocado
+                Por um perfume com cheiro de mato
+
+                E ela, que era cheia de não me toque
+                Agora tá tocando o gado
+
+                A maquiagem dela agora é poeira
+                A patricinha virou boiadeira
+                Largou o vinho pra tomar cerveja
+                A patricinha virou boiadeira
+
+                A maquiagem dela agora é poeira
+                A patricinha virou boiadeira
+                Largou o vinho pra tomar cerveja
+                A patricinha virou boiadeira
+
+                O cabelo Chanel deu lugar pro chapéu
+                Tá cheia de terra a unha de gel
+                O Dolce & Gabbana agora foi trocado
+                Por um perfume com cheiro de mato
+
+                E ela, que era cheia de não me toque
+                Agora tá tocando o gado
+
+                A maquiagem dela agora é poeira
+                A patricinha virou boiadeira
+                Largou o vinho pra tomar cerveja
+                A patricinha virou boiadeira
+
+                A maquiagem dela agora é poeira
+                A patricinha virou boiadeira
+                Largou o vinho pra tomar cerveja
+                A patricinha virou boiadeira
+
+                A maquiagem dela agora é poeira
+                A patricinha virou boiadeira
+                Largou o vinho pra tomar cerveja
+                A patricinha virou boiadeira
+
+                A boiadeira chegou, bebê
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>

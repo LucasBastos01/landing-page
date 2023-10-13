@@ -1,0 +1,140 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #66E3DA;
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+    margin-bottom: 2vh !important;
+}
+
+#fundo {
+    width: 100%;
+    background-color: #082260;
+    min-height: 50vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms {
+    border: 1px solid #2C7EA8;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#botaoFinalizar {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    font-weight: 500;
+}
+
+#botaoFinalizar::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 160px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#botaoFinalizar:hover {
+    color: white;
+    font-size: 18px;
+}
+
+#botaoFinalizar:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+#botaoFinalizar:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.outer {
+    border-left: 2px solid #333;
+}
+
+.cardTimeline {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.title {
+    color: #50C7CF;
+    position: relative;
+    font-size: 15px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -36px;
+    border: 3px solid orangered;
+}
+
+#hotel{
+    background-color: #082260;
+}
+
+#footer {
+background-color: #50C7CF;
+height: 10vh;
+color: #FFFFFF;
+}
+
+#top{
+    position:fixed;
+    bottom: 2%;
+    right: 1%;
+    z-index: 2;
+}
+
+@media (max-width: 530px) {
+    .timelineLateral{
+        margin-left: 5vh;
+    }
+}

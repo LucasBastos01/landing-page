@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO PARA VOLTAR AO TOPO DA TELA -->
+    <div id="top">
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/send-letter--v1.png" alt="send-letter--v1"
+            title="Voltar ao topo">
+    </div>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container navBarVidro">
+            <a class="navbar-brand" href="#">
+                Serenity Flow </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instrutores">Instrutores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aulas">Aulas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inscricao">Inscrições</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CARDS SOBRE AS AULAS -->
+    <div class="container-fluid mb-5" id="aulas">
+        <div class="container" data-aos="fade-up">
+            <div class="row mt-5">
+                <h3 class="titulo text-center">Aulas</h3>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaHathaYoga.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Hatha Yoga</h5>
+                            <p class="card-text text-center">Uma prática suave, focada em posturas e respiração, ótima
+                                para iniciantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaVinyasaYoga.jpg" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Vinyasa Yoga</h5>
+                            <p class="card-text text-center">Uma aula fluída e dinâmica que combina movimentos com a
+                                respiração.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaYogaRestaurativa.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Yoga Restaurativa</h5>
+                            <p class="card-text text-center">Uma aula fluída e dinâmica que combina movimentos com a
+                                respiração.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaYogaAshtanga.jpg" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Yoga Ashtanga</h5>
+                            <p class="card-text text-center">Uma prática vigorosa e desafiadora que segue uma sequência
+                                específica de posturas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaYogaKundalini.webp" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Yoga Kundalini</h5>
+                            <p class="card-text text-center">Uma aula que combina posturas, respiração, canto e
+                                meditação para despertar a energia interior.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 45vh;">
+                        <img height="200px" src="../src/assets/aulaYogaIyengar.jpg" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Yoga Iyengar</h5>
+                            <p class="card-text text-center">Foco na precisão e alinhamento das posturas usando
+                                acessórios para suporte..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAÇA A SUA INSCRIÇÃO -->
+    <div class="container-fluid" id="inscricao" data-aos="fade-up">
+        <div class="row texto p-5">
+            <div class="col-12 col-md-12 mt-2 forms">
+                <h3 class="titulo text-center">Faça a sua inscrição conosco para uma aula experimental</h3>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="nomeCliente">Nome</label>
+                            <input type="text" name="nomeCliente" id="nomeCliente" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="telefoneCliente">Telefone</label>
+                            <input type="number" name="telefoneCliente" id="telefoneCliente" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="idade">Idade</label>
+                            <br>
+                            <input type="number" name="idade" id="idade" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <button class="button" type="reset">
+                        <span class="btn">Enviar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFESSORES -->
+    <div class="container-fluid mb-5" id="instrutores">
+        <div class="container" data-aos="fade-up">
+            <div class="row mt-5">
+                <h3 class="titulo text-center">Instrutores</h3>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 65vh;">
+                        <center>
+                            <video width="256" height="256" preload="none"
+                                style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/11708/11708871.png') 50% 50% / fit no-repeat;"
+                                autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                <source src="https://cdn-icons-mp4.flaticon.com/512/11708/11708871.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </center>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Maria Santos</h5>
+                            <p class="card-text text-center">É uma instrutora de yoga experiente que pratica há mais de
+                                10 anos. Suas aulas são centradas na conexão mente-corpo, promovendo equilíbrio e
+                                bem-estar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 65vh;">
+                        <center>
+                            <video width="256" height="256" preload="none"
+                                style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/12146/12146129.png') 50% 50% / fit no-repeat;"
+                                autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                <source src="https://cdn-icons-mp4.flaticon.com/512/12146/12146129.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </center>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Pedro Alves</h5>
+                            <p class="card-text text-center">É um instrutor de yoga dedicado à meditação e ao alívio do
+                                estresse por meio de posturas terapêuticas. Ele ensina a importância da respiração
+                                consciente em suas aulas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card" style="height: 65vh;">
+                        <center>
+                            <video width="256" height="256" preload="none"
+                                style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/11708/11708871.png') 50% 50% / fit no-repeat;"
+                                autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                <source src="https://cdn-icons-mp4.flaticon.com/512/11708/11708871.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </center>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">Ana Silva</h5>
+                            <p class="card-text text-center">É uma instrutora de yoga apaixonada por yoga restaurativa.
+                                Suas aulas focam na recuperação e relaxamento profundo, proporcionando um refúgio da
+                                agitação do dia a dia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <div class="container-fluid" data-aos="fade-up" id="depoimentos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mt-3">
+                    <h3 class="titulo text-center">Depoimentos de alunos</h3>
+                    <div class="accordion m-3 mt-5" id="accordionPanelsStayOpenExample1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne-1" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseOne-1">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/11708/11708871.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/11708/11708871.mp4"
+                                            type="video/mp4">
+                                    </video>Maria Santos
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne-1" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Minha aula de yoga foi incrível! A yoga me ajudou a melhorar minha flexibilidade e a
+                                    aliviar o estresse do meu dia a dia. Estou me sentindo mais equilibrada e em paz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo-1" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo-1">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/12146/12146129.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/12146/12146129.mp4"
+                                            type="video/mp4">
+                                    </video>Pedro Alves
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo-1" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Minha experiência com yoga tem sido transformadora! As aulas me ensinaram a
+                                    importância da respiração consciente e do relaxamento. Sinto-me mais centrado e
+                                    focado em minha vida.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree-1" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree-1">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/11708/11708871.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/11708/11708871.mp4"
+                                            type="video/mp4">
+                                    </video>Ana Silva
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree-1" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yoga restaurativa é maravilhosa! As aulas me proporcionam um refúgio de paz e
+                                    relaxamento. Tenho dormido melhor e me sinto mais rejuvenescida a cada sessão.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne-2" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseOne-2">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/12146/12146129.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/12146/12146129.mp4"
+                                            type="video/mp4">
+                                    </video>João Pereira
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne-2" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yoga é um presente para o corpo e a mente! As aulas me ajudaram a melhorar minha
+                                    postura e a aliviar dores nas costas. Estou me sentindo mais relaxado e energizado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo-2" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo-2">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/11708/11708871.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/11708/11708871.mp4"
+                                            type="video/mp4">
+                                    </video>Sofia Almeida
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo-2" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yoga me trouxe paz interior. A prática me ensinou a relaxar minha mente e a
+                                    encontrar equilíbrio. Estou mais conectada comigo mesma e com o presente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree-2" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree-2">
+                                    <video width="50" height="50" preload="none"
+                                        style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/12146/12146129.png') 50% 50% / fit no-repeat;"
+                                        autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                                        <source src="https://cdn-icons-mp4.flaticon.com/512/12146/12146129.mp4"
+                                            type="video/mp4">
+                                    </video>Rafael Oliveira
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree-2" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yoga é minha paixão! As aulas me ajudaram a encontrar serenidade e a lidar com o
+                                    estresse. Cada sessão é um momento de autodescoberta e relaxamento profundo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="row align-items-center text-center">
+            <div class="col-4 mt-4">
+                FOOTER
+            </div>
+            <div class="col-4 mt-4">
+                FOOTER
+            </div>
+            <div class="col-4 mt-4">
+                FOOTER
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- SCRIPT PARA VOLTAR AO TOPO DA PÁGINA -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const topButton = document.getElementById("top");
+        topButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+</script>
+
+</html>

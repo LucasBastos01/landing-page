@@ -1,0 +1,178 @@
+body {
+	overflow-x: hidden;
+}
+
+/* COMEÇO PADRONIZAÇÃO DOS TEXTOS */
+
+.titulo {
+	color: #FFFFFF;
+	font-size: 47px;
+	font-weight: 800;
+	font-family: lulo-clean-w01-one-bold, lulo-clean-w05-one-bold, sans-serif;
+	margin-bottom: 20px !important;
+}
+
+.texto {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+/* FIM PADRONIZAÇÃO DOS TEXTOS */
+
+/* COMEÇO DO FOOTER */
+
+footer {
+	background: #101010;
+	padding: 86px 0;
+}
+
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+}
+
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#basic-addon2 {
+	background: #2ecc71;
+	color: #fff;
+}
+
+.socials i {
+	font-size: 30px;
+	margin-right: 16px;
+	color: white;
+	border-radius: 10px;
+	width: 40px;
+	height: 40px;
+	padding: 5px 0 0 8px;
+}
+
+.socials i.fa-facebook:hover {
+	background-color: #2753a7;
+}
+
+.socials i.fa-whatsapp:hover {
+	background-color: green;
+}
+
+.socials i.fa-instagram:hover {
+	background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.socials i.fa-twitter:hover {
+	background-color: #55acee;
+}
+
+@media (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+	
+	#download {
+		margin-left: 0 !important;
+	}
+}
+
+/* FIM DO FOOTER */
+
+
+/* COMEÇO ANIMAÇÃO DO BOTÃO DOWNLOAD */
+
+.button {
+	position: relative;
+	overflow: hidden;
+	height: 3rem;
+	padding: 0 2rem;
+	border-radius: 1.5rem;
+	background: transparent;
+	background-size: 400%;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+	transform: scaleY(1);
+}
+
+.button-content {
+	position: relative;
+	z-index: 1;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	width: 100%;
+	height: inherit;
+	border-radius: inherit;
+	background: linear-gradient(82.3deg,
+			rgba(150, 93, 233, 1) 10.8%,
+			rgba(99, 88, 238, 1) 94.3%);
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover .button-content {
+	color: white;
+}
+
+
+.button:active {
+	scale: 0.9;
+}
+
+/* FIM ANIMAÇÃO DO BOTÃO DOWNLOAD */
+
+/* COMEÇO BOTÃO PARA VOLTAR AO TOPO DA PÁGINA */
+
+#top {
+	position: fixed;
+	bottom: 2%;
+	right: 1%;
+	z-index: 2;
+}
+
+/* FIM BOTÃO PARA VOLTAR AO TOPO DA PÁGINA */
